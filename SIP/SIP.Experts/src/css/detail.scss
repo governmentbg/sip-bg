@@ -1,0 +1,25 @@
+.detail-view {
+    font-size: 12px;
+    transition: max-height 0.5s ease-out;
+    height: auto;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #eff8fb;
+    border: 1px solid #0079c1;
+    td {
+        line-height: 14px;
+    }
+    tr:hover{
+        background-color: #ace1f5;
+    }
+}
+
+.editing-detail-view {
+    font-size: 12px;
+    overflow: hidden;
+    padding: 5px;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}

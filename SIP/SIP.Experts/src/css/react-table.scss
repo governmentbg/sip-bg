@@ -1,0 +1,214 @@
+@import "../core/css/media-tests";
+
+
+.ReactTable .rt-tbody .rt-tr {
+    max-height: 40px;
+}
+
+.tableCollapeTitle {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ReactTable .rt-tr-group {
+    -webkit-box-flex: unset !important;
+    -ms-flex: none !important;
+    flex: none !important;
+}
+
+.table-react-tabs__tab-panel {
+    height: calc(100% - 40px);
+}
+
+.tableToolbarBtn {
+    border: 0;
+    border-radius: 0;
+    padding: 3px;
+    color: white;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    &.marginLeft{
+        margin-left: 3px;
+    }
+}
+
+.tableToolbarBtn:not([disabled]):hover {
+    background: #e4e9ed;
+    color: #768896;
+  }
+  
+  .tableToolbarBtn[disabled]{
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .tableToolbarBtn.selected{
+    background:rgba(127, 224, 127, 0.65);
+  }
+
+.detailInnterTableContainer{
+    background: white;
+    box-shadow: 2px 2px 10px;
+    /* margin-top: 20px; */
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ReactTable .-pagination .-center {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 !important;
+    flex: 1 !important;
+}
+
+.ReactTable .-pagination {
+    position: relative;
+    padding: 0;
+}
+
+.ReactTable .-pagination .-btncontainer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+
+.ReactTable .paginationTools {
+    max-height: 0;
+    height: auto;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    background-color: #f5f8fa;
+    transition: max-height 0.5s ease;
+    border-top: 1px solid gray;
+    overflow: hidden;
+    display: flex;
+    margin-left: -3px;
+}
+
+.mobile-table-header{
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.table-no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
+}
+.ReactTable .rt-rthead {
+    min-width: 0px !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.ReactTable .rt-tbody {
+    min-width: 0px !important;
+    width: 100% !important;
+    height: fit-content !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+}
+
+.ReactTable {
+    -webkit-user-select:text !important;
+    -moz-user-select:-moz-text !important;
+    -ms-user-select:text !important;
+    user-select:text !important;
+    .rt-table{
+        height: 100% !important;
+        min-width: 0px !important;
+        width: 100% !important;
+        overflow-x:hidden !important;
+        overflow-y:hidden !important;
+    }
+}
+
+.TablesContainer{
+    position: relative;
+    height: 100%;
+    .tableHeader {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        height: 40px;
+        padding: 0px 20px;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .tableHeaderColor1{
+        background-color: #0065a1;
+    }
+    .tableHeaderColor2{
+        background-color:#0079c1;
+    }
+    .tableHeader:hover{
+        background-color:#014e7c !important;
+    }
+    .Collapsible{
+        transition: max-height 0.5s ease;
+        overflow: hidden;
+    }
+
+    .CollapsibleContent{
+        overflow: hidden;
+    }
+}
+.ReactTable .rt-th, .ReactTable .rt-td {
+    @include media("<=phone") {
+
+    }
+  
+    @include media(">phone") {
+
+    }
+  
+    @include media(">=815px") {
+        padding: 2px 5px !important;
+    }
+  
+    @include media(">=desktop") {
+
+    }
+    
+    @include media("retina2x") {
+  
+    }
+}
+
+.ReactTable .rt-tr {
+    @include media("<=phone") {
+
+    }
+  
+    @include media(">phone") {
+
+    }
+  
+    @include media(">=815px") {
+        flex: 1 0 28px !important;
+    }
+  
+    @include media(">=desktop") {
+
+    }
+    
+    @include media("retina2x") {
+  
+    }
+}

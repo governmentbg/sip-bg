@@ -1,0 +1,29 @@
+.modalBackground{
+    width: 100%;
+    height: 100%;
+    background: #020202;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  .popupHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: #0079c1;
+    color: white;
+    cursor: move;
+  }
+  
+  .popupContent{
+    background: white;
+    padding: 10px;
+    overflow: auto;
+    max-height: 100%;
+  }
+  
+  .popupClose{
+    cursor: pointer;
+  }

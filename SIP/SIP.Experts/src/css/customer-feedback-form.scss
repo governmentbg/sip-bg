@@ -1,0 +1,60 @@
+﻿@import "../core/css/media-tests";
+
+.horizontal-wrapping-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.horizontal-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.vertical-flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.flex-item {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.flex-auto {
+    flex-basis: auto;
+    flex-shrink: 0; 
+}
+.flex-scalable {
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: 10px;
+}
+
+.flex-item-side-margin {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-basis: auto;
+}
+
+.attachmentLabel{
+    font-size:85%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.attachmentLabel.al-valid {
+    color: #3498db;
+}
+.attachmentLabel.al-invalid{
+    color: #E74C3C;
+}
+
+.text-wrapper {
+    background-color: ivory;
+    box-shadow: 3px 3px 5px black;
+    border-color: hsl(208, 99%, 50%);
+    outline: none;
+}

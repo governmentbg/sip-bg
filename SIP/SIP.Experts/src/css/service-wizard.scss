@@ -1,0 +1,23 @@
+﻿@import "../core/css/media-tests";
+
+.iisdainfo{
+    border:solid windowtext 1.0pt;
+}
+td.iisdainfo{
+    vertical-align:top;
+    padding-left:5.4pt;
+    padding-right:5.4pt;
+}
+td.iisdalabel{
+    border:solid windowtext 1.0pt;
+    padding-left:5.4pt;
+    padding-right:5.4pt;
+    vertical-align:top;
+    background-color:#DEEAF6;
+}
+table.iisdainfo{
+    margin-left:10pt;
+    margin-right:10pt;
+    margin-bottom:10pt;
+    border-collapse:collapse;
+}

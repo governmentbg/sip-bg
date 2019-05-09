@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "lib": ["dom", "es5", "es6"],
+    "target": "es5",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "noEmitHelpers": true,
+    "declaration": false,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true,
+
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": false,
+    "importHelpers": true,
+    "skipLibCheck": true
+  },
+  "files": [
+    "src/index.tsx"
+  ],
+  "types": [
+    "arcgis-js-api",
+    "moment"
+  ],
+  "include": [
+    "src/*",
+    "src/GKF/*"
+  ]
+}

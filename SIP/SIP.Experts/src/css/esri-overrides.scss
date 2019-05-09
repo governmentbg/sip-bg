@@ -1,0 +1,53 @@
+@import "../core/css/media-tests";
+
+.layer-list {
+	height: 100%;
+	max-width: none;
+}
+
+.detail-view {
+	height: 100%;
+	max-width: none;
+	overflow: auto;
+}
+
+:focus {
+		outline: none;
+		outline-offset: 0;
+		-moz-outline-radius: 0;
+}
+
+.esri-view-width-xsmall .esri-expand--auto .esri-expand__mask--expanded {
+	z-index: 2;
+}
+
+.esri-view-width-xsmall .esri-expand--auto .esri-expand__container--expanded{
+	z-index: 2;
+    margin-top: 55px;
+    overflow: auto;
+    max-height: 400px;
+}
+
+
+.esri-ui-top-left {
+    top: 80px;
+    left: 0;
+}
+
+.esri-ui-top-left{
+	@include media("<tablet") {
+		top: 100px;
+    }
+}
+
+// .esri-ui-manual-container>.esri-component{
+// 	display: none;
+// }
+
+.esri-search__input-container {
+    flex: none !important;
+}
+
+.esri-print__panel-container.esri-print__advanced-options-section{
+	display: none;
+}

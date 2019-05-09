@@ -1,0 +1,16 @@
+.Bulletin{
+    .checkboxContainer {
+        display: flex;
+        align-items: center;
+        >div {
+            margin-left: 10px;
+        }
+    }
+    input[type=checkbox]{
+        height: 18px;
+        width: 18px;
+    }
+}
+
+
+
